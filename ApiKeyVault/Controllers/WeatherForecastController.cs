@@ -38,7 +38,7 @@ namespace ApiKeyVault.Controllers
             string keyVaultUrl ="https://key20314.vault.azure.net/";
             var client = new SecretClient(new Uri(keyVaultUrl), 
                 new DefaultAzureCredential());
-            KeyVaultSecret secret = client.GetSecret("key20314");
+            KeyVaultSecret secret = client.GetSecret("ahmad20312");
             string secretValue = secret.Value;
             return Ok(secretValue);
         }
